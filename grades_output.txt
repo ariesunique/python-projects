@@ -1,0 +1,101 @@
+
+
+Question 1. Using vanilla csv reader
+['Smith', ' John', ' 8', ' 4', ' P', ' 87', ' 98']
+['Eyre', ' Jane', ' 10', ' 10', ' P', ' 98', ' 100']
+['Leto', ' Jared', ' 5', ' 2', ' F', ' 68', ' 85']
+['Fox', ' Brian', ' 9', ' 7', ' P', ' 90', ' 90']
+['Riley', ' Teddy', ' 4', '7', 'P', '98', '81']
+['Jackson', ' Sean', ' 9', '9', 'P', '75', '100']
+['Brown', ' Thomas', '10', '10', 'P', '88', '99']
+['Twist', 'Oliver', '8', '9', 'P', '98', '98']
+['Lupone', ' Patti', ' 9', '8', 'P', '85', '80']
+['Brooks', ' Golden', '7', '7', 'P', '80', '80']
+['Ross', ' Diana', ' 9', '10', 'P', '92', '95']
+['Gordy', 'Berry', '6', '8', 'P', '79', '83']
+The avg for hw1 is 7.83, for hw2 is 7.58, for test1 is 86.50, and for test2 is 90.75
+
+
+Question 2. Using DictReader
+OrderedDict([('last', 'Smith'), ('first', ' John'), ('hw1', ' 8'), ('hw2', ' 4'), ('hw3', ' P'), ('test1', ' 87'), ('test2', ' 98')])
+OrderedDict([('last', 'Eyre'), ('first', ' Jane'), ('hw1', ' 10'), ('hw2', ' 10'), ('hw3', ' P'), ('test1', ' 98'), ('test2', ' 100')])
+OrderedDict([('last', 'Leto'), ('first', ' Jared'), ('hw1', ' 5'), ('hw2', ' 2'), ('hw3', ' F'), ('test1', ' 68'), ('test2', ' 85')])
+OrderedDict([('last', 'Fox'), ('first', ' Brian'), ('hw1', ' 9'), ('hw2', ' 7'), ('hw3', ' P'), ('test1', ' 90'), ('test2', ' 90')])
+OrderedDict([('last', 'Riley'), ('first', ' Teddy'), ('hw1', ' 4'), ('hw2', '7'), ('hw3', 'P'), ('test1', '98'), ('test2', '81')])
+OrderedDict([('last', 'Jackson'), ('first', ' Sean'), ('hw1', ' 9'), ('hw2', '9'), ('hw3', 'P'), ('test1', '75'), ('test2', '100')])
+OrderedDict([('last', 'Brown'), ('first', ' Thomas'), ('hw1', '10'), ('hw2', '10'), ('hw3', 'P'), ('test1', '88'), ('test2', '99')])
+OrderedDict([('last', 'Twist'), ('first', 'Oliver'), ('hw1', '8'), ('hw2', '9'), ('hw3', 'P'), ('test1', '98'), ('test2', '98')])
+OrderedDict([('last', 'Lupone'), ('first', ' Patti'), ('hw1', ' 9'), ('hw2', '8'), ('hw3', 'P'), ('test1', '85'), ('test2', '80')])
+OrderedDict([('last', 'Brooks'), ('first', ' Golden'), ('hw1', '7'), ('hw2', '7'), ('hw3', 'P'), ('test1', '80'), ('test2', '80')])
+OrderedDict([('last', 'Ross'), ('first', ' Diana'), ('hw1', ' 9'), ('hw2', '10'), ('hw3', 'P'), ('test1', '92'), ('test2', '95')])
+OrderedDict([('last', 'Gordy'), ('first', 'Berry'), ('hw1', '6'), ('hw2', '8'), ('hw3', 'P'), ('test1', '79'), ('test2', '83')])
+HW1 avg: 7.83, HW2 avg: 7.58, Test1 avg: 86.50, Test2 avg: 90.75
+
+
+Question 3. Using NamedTuple
+Row(last='Smith', first=' John', hw1=' 8', hw2=' 4', hw3=' P', test1=' 87', test2=' 98')
+Row(last='Eyre', first=' Jane', hw1=' 10', hw2=' 10', hw3=' P', test1=' 98', test2=' 100')
+Row(last='Leto', first=' Jared', hw1=' 5', hw2=' 2', hw3=' F', test1=' 68', test2=' 85')
+Row(last='Fox', first=' Brian', hw1=' 9', hw2=' 7', hw3=' P', test1=' 90', test2=' 90')
+Row(last='Riley', first=' Teddy', hw1=' 4', hw2='7', hw3='P', test1='98', test2='81')
+Row(last='Jackson', first=' Sean', hw1=' 9', hw2='9', hw3='P', test1='75', test2='100')
+Row(last='Brown', first=' Thomas', hw1='10', hw2='10', hw3='P', test1='88', test2='99')
+Row(last='Twist', first='Oliver', hw1='8', hw2='9', hw3='P', test1='98', test2='98')
+Row(last='Lupone', first=' Patti', hw1=' 9', hw2='8', hw3='P', test1='85', test2='80')
+Row(last='Brooks', first=' Golden', hw1='7', hw2='7', hw3='P', test1='80', test2='80')
+Row(last='Ross', first=' Diana', hw1=' 9', hw2='10', hw3='P', test1='92', test2='95')
+Row(last='Gordy', first='Berry', hw1='6', hw2='8', hw3='P', test1='79', test2='83')
+HW1 avg: 7.83, HW2 avg: 7.58, Test1 avg: 86.50, Test2 avg: 90.75
+
+
+Question 4. Each student's grades order by last name.
+Last Name       First Name      HW Average Test Average
+Brooks          Golden                 7.0       80.0
+Brown           Thomas                10.0       93.5
+Eyre            Jane                  10.0       99.0
+Fox             Brian                  8.0       90.0
+Gordy           Berry                  7.0       81.0
+Jackson         Sean                   9.0       87.5
+Leto            Jared                  3.5       76.5
+Lupone          Patti                  8.5       82.5
+Riley           Teddy                  5.5       89.5
+Ross            Diana                  9.5       93.5
+Smith           John                   6.0       92.5
+Twist           Oliver                 8.5       98.0
+
+
+Question 5. Show cumulative grade for each student and print highest student.
+Last            First            Cum Grade
+==========================================
+Smith           John                 82.75
+Eyre            Jane                 99.30
+Leto            Jared                64.05
+Fox             Brian                87.00
+Riley           Teddy                79.15
+Jackson         Sean                 88.25
+Brown           Thomas               95.45
+Twist           Oliver               94.10
+Lupone          Patti                83.25
+Brooks          Golden               77.00
+Ross            Diana                93.95
+Gordy           Berry                77.70
+Student with the highest grade is Jane Eyre with a cumulative grade of 99.30
+
+
+Question 6. Show cumulative grade for each student and determine the top 3 students.
+Last            First                Grade
+==========================================
+Eyre            Jane                 99.30
+Brown           Thomas               95.45
+Twist           Oliver               94.10
+Ross            Diana                93.95
+Jackson         Sean                 88.25
+Fox             Brian                87.00
+Lupone          Patti                83.25
+Smith           John                 82.75
+Riley           Teddy                79.15
+Gordy           Berry                77.70
+Brooks          Golden               77.00
+Leto            Jared                64.05
+
+The top 3 students are Jane, Thomas, and Oliver, with cumulative grades of 99.30, 95.45, and 94.10, respectively.
