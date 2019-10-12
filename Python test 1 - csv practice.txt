@@ -1,0 +1,32 @@
+﻿Here is a test to help you practice doing basic functions using a csv file. The answer code can be found in grades.py (which uses grades.csv for input). Sample output is written to grades_output.txt
+
+
+You have a csv file storing student grades. The first two homeworks are scored on a scale of 10. The third homework was Pass/Fail, The two tests are out of 100. The sample file below is an example of how the data will be formatted.
+
+
+grades.csv
+last name, first name, HW1, HW2, HW3, Test1, Test2
+Sprat, Jack, 10, 9, P, 100, 75
+Blunt, Emily, 10, 10, P, 100, 99
+Farrow, Ronan, 8, 8, P, 92, 97
+Sheen, Charlie, 5, 2, F, 75, 67
+
+
+
+
+
+
+1. Write code to read the file using only the csv module (the regular csv reader), print each line, and print the class average for hw1, hw2, test1, and test2.
+2. Write the same code using DictReader.
+3. Write the same code using namedTuple
+4. Write code that will read the file and display a class grade summary for each student. The results should be ordered by student last name, and show the student’s average hw grade and student’s avg test grade
+
+
+        Blunt, Emily, 10, 99.9
+        Farror, Ronan, 8, 93.8
+        Sheen, Charlie
+        Sprat, Jack
+
+
+5. Write code to determine which student has the highest cumulative grade. Cumulative grade is calculated as 70% of the test avg grade and 30% of the homework avg grade
+6. Write code to get the top 3 students with the highest cumulative grade.
